@@ -7,7 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="git-training" />
+        <module name="data" />
+        <module name="security" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="data" options="-parameters" />
+      <module name="security" options="-parameters" />
+    </option>
   </component>
 </project>
